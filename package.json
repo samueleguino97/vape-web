@@ -27,6 +27,7 @@
     "redis": "^4.7.0"
   },
   "devDependencies": {
+    "@better-auth/cli": "^1.2.5",
     "@react-router/dev": "^7.5.0",
     "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^20",

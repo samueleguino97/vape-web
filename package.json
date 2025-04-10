@@ -7,7 +7,7 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "auth:generate": "npx @better-auth/cli@latest generate --output ./app/db/auth.schema.ts --config ./app/utils/auth.ts --y",
+    "auth:generate": "npx @better-auth/cli generate --output ./app/db/auth.schema.ts --config ./app/utils/auth.ts --y",
     "db:generate": "npx drizzle-kit generate",
     "db:migrate": "npx drizzle-kit migrate",
     "db:update": "npm run auth:generate && npm run db:generate && npm run db:migrate"

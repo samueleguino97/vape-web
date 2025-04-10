@@ -1,11 +1,10 @@
 FROM node:20-alpine AS development-dependencies-env
 COPY . /app
 WORKDIR /app
-RUN npm install -g drizzle-kit
 RUN npm ci
 
 FROM node:20-alpine AS production-dependencies-env
-COPY ./package.json package-lock.json /app/
+COPY ./package.json package-lock.json drizzle.config.ts /app/
 WORKDIR /app
 RUN npm ci --omit=dev
 
